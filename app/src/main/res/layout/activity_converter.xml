@@ -1,11 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConverterActivity">
+    android:padding="16dp"
+    tools:context=".CalculatorActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <!-- Campo de entrada do valor -->
+  <EditText
+      android:id="@+id/inputValue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="8dp"
+      android:autofillHints=""
+      android:hint="@string/digite_o_valor"
+      android:inputType="numberDecimal"
+      android:minHeight="48dp"
+      app:layout_constraintBottom_toTopOf="@+id/spinnerFrom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+  <!-- Spinner para selecionar a unidade de origem -->
+
+  <!-- Spinner para selecionar a unidade de destino -->
+
+  <!-- Botão para realizar a conversão -->
+
+  <!-- Campo de exibição do resultado -->
+
+  <Spinner
+      android:id="@+id/spinnerFrom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="8dp"
+      android:minHeight="48dp"
+      app:layout_constraintBottom_toTopOf="@+id/spinnerTo"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/inputValue" />
+
+  <Spinner
+      android:id="@+id/spinnerTo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="8dp"
+      android:minHeight="48dp"
+      app:layout_constraintBottom_toTopOf="@+id/convertButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinnerFrom" />
+
+  <Button
+      android:id="@+id/convertButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:text="@string/converter"
+      android:textColor="#212121"
+      app:layout_constraintBottom_toTopOf="@+id/outputResult"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinnerTo" />
+
+  <TextView
+      android:id="@+id/outputResult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:text="@string/resultado"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/convertButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

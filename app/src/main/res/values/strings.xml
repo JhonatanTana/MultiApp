@@ -5,6 +5,7 @@
     <string name="calculator">Calculadora</string>
     <string name="to_do">Lista de Tarefas</string>
     <string name="coverter">Conversor</string>
+    <string name="search_cep">Buscar CEP</string>
 
     <!-- Calculadora -->
     <string name="result">Resultado</string>
@@ -28,5 +29,24 @@
     <!-- Lista de tarefas -->
     <string name="adicionar_nova_tarefa">Adicionar nova tarefa</string>
     <string name="adicionar">Adicionar</string>
+
+    <!-- Conversor -->
+    <string name="converter">Converter</string>
+    <string name="digite_o_valor">Digite o valor</string>
+    <string name="resultado">Resultado:</string>
+
+    <!-- Consultor de CEP -->
+    <string name="cep">CEP</string>
+    <string name="buscar_cep">Buscar</string>
+    <string name="rua">Rua:</string>
+    <string name="numero">N°:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="cidade">Cidade:</string>
+    <string name="estado">Estado:</string>
+    <string name="complemento">Complemento:</string>
+    <string name="uf">UF:</string>
+    <string name="regiao">Região:</string>
+    <string name="ibge">IBGE:</string>
+    <string name="gia">GIA:</string>
 
 </resources>

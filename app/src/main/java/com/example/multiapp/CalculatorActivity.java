@@ -25,7 +25,6 @@ public class CalculatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        //EdgeToEdge.enable(this);
 
         //Inicializando o binding
         binding = ActivityCalculatorBinding.inflate(getLayoutInflater());

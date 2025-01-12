@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -19,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //EdgeToEdge.enable(this);
 
         //Inicializando o binding
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -35,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn_Calculator = binding.btnCalculator;
         Button btn_ToDo = binding.btnToDo;
         Button btn_Converter = binding.btnConverter;
+        Button btn_Search_Cep = binding.btnSearch;
 
         //Abrindo as novas Activity
         btn_Calculator.setOnClickListener( v -> {
@@ -49,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         btn_Converter.setOnClickListener( v -> {
             Intent intent = new Intent(this, ConverterActivity.class);
+            startActivity(intent);
+        });
+
+        btn_Search_Cep.setOnClickListener( v -> {
+            Intent intent = new Intent(this, CepActivity.class);
             startActivity(intent);
         });
 

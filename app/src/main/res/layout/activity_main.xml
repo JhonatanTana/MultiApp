@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/btnCalculator"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
@@ -26,12 +26,13 @@
 
     <Button
         android:id="@+id/btnToDo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/to_do"
+        android:textAlignment="textStart"
         android:textColor="#212121"
         app:icon="@drawable/ic_to_do"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,13 +41,32 @@
 
     <Button
         android:id="@+id/btnConverter"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/coverter"
+        android:textAlignment="textStart"
         android:textColor="#212121"
         app:icon="@drawable/ic_rotate_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnToDo" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/search_cep"
+        android:textAlignment="textStart"
+        android:textColor="#212121"
+        app:icon="@drawable/ic_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConverter" />
 </androidx.constraintlayout.widget.ConstraintLayout>
